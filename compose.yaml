@@ -8,3 +8,6 @@ services:
       - 'MYSQL_USER=myuser'
     ports:
       - '3306'
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./mysql-config/my.cnf:/etc/mysql/conf.d/my.cnf
